@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row border shadow-sm mt-2 animated bounceInDown">
+	<div class="col-md-12 animated fadeIn">
+		<h1 class="font-weight-light pl-5 pt-2">Nicolas Bolt</h1>
+	</div>
+	<div class="col-md-4 pl-5">
+		<img src="static/images/picture-sq.jpg" alt="profile-pic" height=200 width=200 class="rounded-circle mt-3 mb-3" />
+	</div>
+		<div class="col-md-8 p-4 animated fadeIn">
+		<p class="lead">I'm passionate about using data to improve outcomes.  I use a variety of tools to achieve this.  This includes Python, Pandas, Flask, and Django.  Even in competitive powerlifting, data can help improve the results of the athletes competing in the sport.  As a competitive powerlifter this can keep me on track of what I need to work on individually.  Imagine what this can do in a team environment.</p>
+
+		<p class="lead">I am always hungry to learn new languages and visualization tools.  As a strength coach, opportunities exist in combining strength and conditioning and data science.  I graduated from Ball State University with an Exercise Science Bachelors degree in 2019.  For business inquiries please email me at nicolas.bolt@gmail.com </p>
+	</div>
+</div>
+<div class="row justify-content-center mt-5">
+	<div class="col-md-5 m-2 border shadow-sm animated bounceInLeft">
+		<a href="http://nicolasbolt.com" class="text-dark font-weight-light"><h3 class="font-weight-light">Powerlifting Stats</h3></a>
+		<p class="font-weight-light">A web application that searches the openpowerlifting database and displays visualizations of the data</p>
+	</div>
+		<div class="col-md-5 m-2 border shadow-sm animated bounceInRight">
+		<a href="http://nasa.nicolasbolt.com" class="text-dark font-weight-light"><h3 class="font-weight-light">NASA Web App</h3></a>
+		<p class="font-weight-light">A web application that retrieves data from two NASA REST API's and displays the data to the user.</p>
+	</div>
+</div>
+
+<div class="row justify-content-center mt-5">
+	<div class="col-md-5 m-2 border shadow-sm animated bounceInUp">
+		<a href="http://weather.nicolasbolt.com" class="text-dark font-weight-light"><h3 class="font-weight-light">Weather Application</h3></a>
+		<p class="font-weight-light">A weather web application built with Javascript and the React Framework.</p>
+	</div>
+</div>
+{% endblock content %}

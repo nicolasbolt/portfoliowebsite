@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nicolas Bolt</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+  	<link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet">
+
+	<link rel="stylesheet" href="/static/styles/style.css">
+</head>
+</head>
+<body class="bg-color">
+	<header>
+	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm">
+		        <div class="container">
+		          <a class="navbar-brand mr-5" style="font-family: 'Cutive', serif;" href="/">Nick Bolt</a>
+		          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+		            <span class="navbar-toggler-icon"></span>
+		          </button>
+		          <div class="collapse navbar-collapse" id="navbarToggle">
+		            <div class="navbar-nav mr-auto">
+		              <a class="nav-item nav-link" href="/inquiries">About</a>
+		          </div>
+		          <div class="navbar-nav">
+		              <div class="dropdown">
+		              <a class="nav-item nav-link" href="http://nicolasbolt.com">Powerlifting Stats</a>
+		        </div>
+		            <div class="navbar-nav">
+		              <a class="nav-item nav-link" href="http://nasa.nicolasbolt.com">NASA</a>
+		            </div>
+		           <div class="navbar-nav">
+		              <a class="nav-item nav-link" href="http://www.cohesivecommerce.com">Cohesive Commerce</a>
+		            </div>
+		        </div>
+		      </nav>
+		  </header>
+	<div class="container content">
+		{% block content %}
+		{% endblock content %}
+	</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+
+var lastScrollTop = 0;
+
+$(window).scroll(function () {
+
+var st = $(this).scrollTop();
+        if (st < lastScrollTop){
+            $('.navbar ').fadeIn();
+        } else {
+          $('.navbar ').fadeOut();
+        }
+        lastScrollTop = st;
+  })
+</script>
+</body>
+</html>
